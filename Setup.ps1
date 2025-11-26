@@ -18,7 +18,7 @@ if (Test-Path $profileFile) {
 
 Write-Host "Agregando configuración al perfil..."
 
-Add-Content $profileFile 'oh-my-posh init pwsh --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/atomic.omp.json" | Invoke-Expression'
+Add-Content $profileFile 'oh-my-posh init pwsh --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/atomic.omp.json" | Invoke-Expression' #cambiar el .omp.json por el theme que desee
 Add-Content $profileFile 'Import-Module Terminal-Icons'
 Add-Content $profileFile 'Set-PSReadLineOption -PredictionViewStyle ListView'
 
